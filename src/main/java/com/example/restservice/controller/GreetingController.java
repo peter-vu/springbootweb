@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class GreetingController {
 
-    @Value("${server.rmi}")
-    private String rmi;
-
     @Autowired
     Environment env;
     private static final String template = "Hello, %s!";
